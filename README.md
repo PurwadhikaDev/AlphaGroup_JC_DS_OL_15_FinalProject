@@ -1,8 +1,16 @@
-# AlphaGroup_JC_DS_OL_15_FinalProject
+This repository is reserved for the final project results made by Group Alpha of JCDSOL-015 by:
+
+- Matthew Adi Simanjaya
+- Arga Taufiq Fairuza
+- Irma Lusyana Manik
+
+# **ATTENTION!**
+
+The fully-processed dataframe available after the running of the .ipynb is too big to be put in Github. It is hence deposited in Google Drive via this link: https://drive.google.com/drive/folders/1iuGwJI5c9hYH0dBaCrJAi6nJRqUefACW?usp=sharing
 
 ## Update 26/11/2024:
 
-Added links in the README to the datasets used for this project (and uploaded the relevant source materials from those links into the repository), uploaded the resultant dataframe downloaded at the end of running the notebook, added a screenshot of the Tableau dashboard, and expanded the summary of the README.
+Added links in the README to the datasets used for this project (and uploaded the relevant source materials from those links into the repository), added a screenshot of the Tableau dashboard, and expanded the summary of the README.
 
 Link to all the core datasets used for this project: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce?resource=download&select=olist_orders_dataset.csv
 
@@ -23,7 +31,7 @@ The notebook encompasses the following topics relevant to the Final Project:
 - It checks for incorrect DTypes, Missingno and Outliers in the notebook, and later deals with them in the Data Cleaning Phase.
 - A cohort analysis is created with the cleaned dataframe, followed by manual definition of RFM Scores and segmentation of sellers by these Scores into clusters.
 - The same clustering process is then done using K-Means (the result of which was later accepted) and DBSCAN, and all three clustering methods were later compared.
-- Using DBSCAN's interpretation of the clusters, we then profiled the sellers by location, R, F and M values, by seller count and monetary value contribution, and analyzed their behaviors using information available in our dataframe.
+- Using K-Means's interpretation of the clusters, we then profiled the sellers by location, R, F and M values, by seller count and monetary value contribution, and analyzed their behaviors using information available in our dataframe.
 - We make our conclusions based on our analysis and make suggestions and recommendation to Olist to best improve the retention rate of their less active sellers, and squeeze more value from their more active sellers.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -70,6 +78,17 @@ Furthermore, determining which seller segments should be prioritized for retenti
 Action: Targeting
 
 Goal: Optimizing sellers retention
+
+# Analytical Flow of the .ipynb Notebook
+
+- We first went through a data dictionary of the rows for each dataset that will make up the first iteration of the dataframe, and then end with the actual formation of the dataframe based on how we joined the datasets
+- We performed the Data Understanding Phase, checking this dataframe for missingno, outliers, and other suspicious values, and the appropriate actions are to be summarized there and acted upon in the Data Cleaning Phase.
+- We performed an EDA to determine which directions we can take the analysis of the data that will be relevant for our goals in this notebook.
+- Unneeded or problematic values detected in the Data Understanding Phase are deleted in the Data Cleaning Phase, and new columns are added in the Feature Engineering phase to further expand the available directions our analysis can go.
+- A cohort analysis was made first, and then RFM Values and Scores were determined as prior use for the Clustering methods we were to use.
+- Three clustering methods (Manual, K-Means and DBSCAN) were trialed to cluster the sellers by their RFM Values/Scores (it is later determined that the K-Means methodology created the clusters best suited for analysis).
+- Using K-Means's interpretation of the clusters, we then profiled the sellers by location, R, F and M values, by seller count and monetary value contribution, and analyzed their behaviors using information available in our dataframe.
+- We made our conclusions based on our analysis and make suggestions and recommendation to Olist to best improve the retention rate of their less active sellers, and squeeze more value from their more active sellers.
 
 # Limitation
 
