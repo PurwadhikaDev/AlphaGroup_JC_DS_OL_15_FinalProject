@@ -2,11 +2,13 @@
 
 ## Update 26/11/2024:
 
-Added links in the README to the datasets used for this project
+Added links in the README to the datasets used for this project, and added a screenshot of the Tableau dashboard.
 
 Link to all the core datasets used for this project: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce?resource=download&select=olist_orders_dataset.csv
 
 We also used a .geojson file from this link: https://github.com/codeforgermany/click_that_hood/blob/main/public/data/brazil-states.geojson
+
+![Screenshot (4736)](https://github.com/user-attachments/assets/9baf095e-0c93-40f3-8a75-e52472d695f3)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
