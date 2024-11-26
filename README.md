@@ -10,7 +10,7 @@ The fully-processed dataframe available after the running of the .ipynb is too b
 
 ## Update 27/11/2024:
 
-Added the final file needed to make the .ipynb notebook run: the brazil-states .geojson
+Uploaded the final file needed to make the .ipynb notebook run: the brazil-states.geojson
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
