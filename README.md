@@ -15,6 +15,9 @@ To the README:
 
 To the Notebook:
 - Added Version 2.1, that corrects the values for the calculation of the target freight value-to-price ratio for the 'Lost' and 'Potential' seller clusters.
+- Added explanations to the problem statement that further pinpoint the goals set for this notebook.
+- Changed the suggested deadlines for some of the recommendations section in the notebook.
+- Added an overall main target at the recommendations section in the notebook: a minimum retention rate to be maintained for a certain duration.
 
 Link to all the core datasets used for this project: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce?resource=download&select=olist_orders_dataset.csv
 
@@ -62,15 +65,15 @@ Source:
 
 # Problem Statement and Goals
 
-Olist, a Brazilian e-commerce platform that supports small and medium-sized businesses by facilitating sales through major online marketplaces, faces a significant challenge in seller retention. Despite its role in simplifying e-commerce processes and enabling sellers to focus on growth, recent trends indicate a decline in seller retention. This issue threatens the sustainability of Olist's business model, as retaining active and high-performing sellers is critical to maintaining platform engagement and revenue.
+Olist, a Brazilian e-commerce platform that supports small and medium-sized businesses by facilitating sales through major online marketplaces, faces a significant challenge in seller retention. Despite its role in simplifying e-commerce processes and enabling sellers to focus on growth, recent trends indicate a decline in seller retention. This issue threatens the sustainability of Olist's business model, as retaining active and high-performing sellers is critical to getting more Lifetime Value (LTV) from each seller (Source: https://www.google.com/url?q=https%3A%2F%2Fuserpilot.com%2Fblog%2Fsaas-customer-retention%2F), thus maintaining platform engagement and revenue.
 
 To address this, Olist has implemented a rule-based RFM (Recency, Frequency, Monetary) clustering approach to segment sellers based on their transaction behaviors. However, this static method may not fully capture the dynamic nature of seller performance and market trends, raising the question of whether machine learning-based clustering could provide a more accurate and actionable segmentation.
 
-The primary objective of this project is to explore how sellers can be clustered using RFM analysis to determine which clusters they belong to in terms of their activity and total transaction value, which can act as a base for us to analyze ways to minimize churn rates. This involves evaluating the effectiveness of machine learning (ML)-based clustering compared to the existing rule-based approach, profiling them, identifying meaningful patterns in seller behavior, and leveraging these insights to develop strategies that improve retention and engagement. By refining the seller clustering methodology, Olist aims to maintain and optimizing the sellers retention rate.
+The primary objective of this project is to explore how sellers can be clustered using RFM analysis to determine which clusters they belong to in terms of their activity and total transaction value, which can act as a base for us to analyze ways to minimize churn rates. This involves evaluating the effectiveness of machine learning (ML)-based clustering compared to the existing rule-based approach, profiling them, identifying meaningful patterns in seller behavior, and leveraging these insights to develop strategies that improve retention and engagement. By refining the seller clustering methodology, Olist aims to maintain and optimize the sellers retention rate.
 
-Value: Sellers Clustering
+Action: Sellers Clustering
 
-Goal: Optimizing sellers retention rate
+Goal: Improve the clustering of these sellers using ML techniques to improve our ability to analyze these sellers based on their behavior.
 
 Problem Statement for Analytics:
 After the seller clusters have been determined, we will then analyze each of these clusters to profile the sellers and see their differences in behavior based on RFM, particularly those that directly affect Olist's bottom line.
@@ -79,9 +82,9 @@ To optimize seller retention, it is essential to gain a comprehensive understand
 
 Furthermore, determining which seller segments should be prioritized for retention efforts—based on their RFM scores and contribution to overall platform performance—will ensure that resources are allocated effectively. By combining these insights, Olist can develop targeted strategies to minimize the decline in seller retention, fostering a sustainable and thriving marketplace.
 
-Action: Targeting
+Action: Profiling clusters by location, seller count and value contribution and analyzing seller behavior by products sold, RFM values and freight costs.
 
-Goal: Optimizing sellers retention
+Goal: Optimizing sellers retention by decreasing the freight cost-to-price ratio by 25% for the lowest-performing sellers, increasing the minimum sellers' transaction frequency to 15 per month (for those that still have potential to become loyal sellers), and restore the transaction frequency and monetary value of the best-performing sellers back to their peaks by the end of the year.
 
 # Analytical Flow of the .ipynb Notebook
 
@@ -116,7 +119,7 @@ Goal: Optimizing sellers retention
 
   - Strategy: Coordinate with multiple major Brazilian marketplaces from 'Olist store' a flash sale event during the second quarter of the year, as this period has the highest frequency of transactions. Leveraging this peak activity can drive even higher sales, attract more buyers, and encourage customer engagement. The event can be tailored to include discounts, bundling offers, and exclusive deals to maximize participation and revenue.
 
-  - Output: Decrease Recency value to less than 50 days without an order passed through Olist and increase Frequency (to 15 orders/month), and Monetary values (to at least 20k Brazilian Reals total) of 558 of the 1,116 'Potential' sellers aforementioned deemed as 'declining'. These goals are to be achieved within two years of publishing this notebook.
+  - Output: Decrease Recency value to less than 50 days without an order passed through Olist and increase Frequency (to 15 orders/month), and Monetary values (to at least 20k Brazilian Reals total) of 558 of the 1,116 'Potential' sellers aforementioned deemed as 'declining'. These goals are to be achieved by the end of 2019.
 
 The main products are sports_leisure, health_beauty, housewares, auto, furniture_decor, cool_stuff, computers_accessories, baby, toys, garden_tools
 
@@ -148,3 +151,5 @@ Higher-end products are watches_gift, bed_bath_table, and furniture_decor
 
 Given the minimal contribution of Lost sellers to Olist’s total order value and their inactivity for over a year, focus on active and potential sellers. The resources may be better allocated elsewhere to boost retention and engagement with more promising segments.
 Sending low-cost re-engagement emails or small incentives to revive interest, such as offering discounted listing fees, just to keep the door open for possible returns.
+
+Overall, we hope that these recommendations will help increase the retention rate of Olist's sellers. We believe that achieving a stable sellers' retention rate at above 35% for at least 12 months since their first order through Olist should be possible by the end of 2019.
