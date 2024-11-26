@@ -10,7 +10,11 @@ The fully-processed dataframe available after the running of the .ipynb is too b
 
 ## Update 26/11/2024:
 
-Added links in the README to the datasets used for this project (and uploaded the relevant source materials from those links into the repository), added a screenshot of the Tableau dashboard, and expanded the summary of the README.
+To the README:
+- Added links in the README to the datasets used for this project (and uploaded the relevant source materials from those links into the repository), added a screenshot of the Tableau dashboard, and expanded the summary of the README.
+
+To the Notebook:
+- Added Version 2.1, that corrects the values for the calculation of the target freight value-to-price ratio for the 'Lost' and 'Potential' seller clusters.
 
 Link to all the core datasets used for this project: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce?resource=download&select=olist_orders_dataset.csv
 
