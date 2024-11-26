@@ -1,5 +1,15 @@
 # AlphaGroup_JC_DS_OL_15_FinalProject
 
+## Update 26/11/2024:
+
+Added links in the README to the datasets used for this project
+
+Link to all the core datasets used for this project: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce?resource=download&select=olist_orders_dataset.csv
+
+We also used a .geojson file from this link: https://github.com/codeforgermany/click_that_hood/blob/main/public/data/brazil-states.geojson
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 This README contains information about the relevant files for Group Alpha's Final Project in the JCDSOL-015 Online Bootcamp in Purwadhika for Data Science and Machine Learning. A .ipynb file containing the finished workbook can be found here.
 
 In addition, a link to the Tableau Public Dashboard can be found here: https://public.tableau.com/app/profile/matthew.adi.simanjaya/viz/FinalProjectTake2_17320184760420/BirdsEyeView?publish=yes
