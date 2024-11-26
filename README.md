@@ -8,6 +8,12 @@ This repository is reserved for the final project results made by Group Alpha of
 
 The fully-processed dataframe available after the running of the .ipynb is too big to be put in Github. It is hence deposited in Google Drive via this link: https://drive.google.com/drive/folders/1iuGwJI5c9hYH0dBaCrJAi6nJRqUefACW?usp=sharing
 
+## Update 27/11/2024:
+
+Added the final file needed to make the .ipynb notebook run: the brazil-states .geojson
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## Update 26/11/2024:
 
 To the README:
