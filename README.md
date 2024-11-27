@@ -10,7 +10,19 @@ The fully-processed dataframe available after the running of the .ipynb is too b
 
 ## Update 27/11/2024:
 
-Uploaded the final file needed to make the .ipynb notebook run: the brazil-states.geojson.
+- Uploaded the final file needed to make the .ipynb notebook run: the brazil-states.geojson.
+- Added Version 2.2, which adds '!pip install's needed to make the notebook run on VSCode (previous versions are only able to run on Google Colab).
+- List of additional '!pip install's
+  - !pip install folium
+  - !pip install ipykernel
+  - !pip install nbformat
+- Version 2.2 also:
+  - Removes the code used for redundant checking of outliers one-by-one in the Data Understanding phase (that is done in more detail in the Data Cleaning phase). The text previously immediately above this code also clarifies this change.
+  - Clarifies the stakeholders that can gain from the findings of this notebook.
+  - Corrects values for the target freight value-to-price ratios (there were previously conflicting values due to slight miscommunication among team members)
+  - Clarifies why the IQR Outlier detection method was not selected, in favor of the Boxplot outlier detection method.
+ 
+- Updated the README to better reflect a summary of the notebook.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -71,26 +83,31 @@ Source:
 
 # Problem Statement and Goals
 
-Olist, a Brazilian e-commerce platform that supports small and medium-sized businesses by facilitating sales through major online marketplaces, faces a significant challenge in seller retention. Despite its role in simplifying e-commerce processes and enabling sellers to focus on growth, recent trends indicate a decline in seller retention. This issue threatens the sustainability of Olist's business model, as retaining active and high-performing sellers is critical to getting more Lifetime Value (LTV) from each seller (Source: https://www.google.com/url?q=https%3A%2F%2Fuserpilot.com%2Fblog%2Fsaas-customer-retention%2F), thus maintaining platform engagement and revenue.
+Olist, a Brazilian e-commerce platform that supports small and medium-sized businesses by facilitating sales through major online marketplaces, faces a significant challenge in seller retention. Despite its role in simplifying e-commerce processes and enabling sellers to focus on growth, recent trends indicate a decline in seller retention. This issue threatens the sustainability of Olist's business model, as retaining active and high-performing sellers is critical to [getting more Lifetime Value (LTV) from each seller](https://userpilot.com/blog/saas-customer-retention/), thus maintaining platform engagement and revenue.
 
 To address this, Olist has implemented a rule-based RFM (Recency, Frequency, Monetary) clustering approach to segment sellers based on their transaction behaviors. However, this static method may not fully capture the dynamic nature of seller performance and market trends, raising the question of whether machine learning-based clustering could provide a more accurate and actionable segmentation.
 
-The primary objective of this project is to explore how sellers can be clustered using RFM analysis to determine which clusters they belong to in terms of their activity and total transaction value, which can act as a base for us to analyze ways to minimize churn rates. This involves evaluating the effectiveness of machine learning (ML)-based clustering compared to the existing rule-based approach, profiling them, identifying meaningful patterns in seller behavior, and leveraging these insights to develop strategies that improve retention and engagement. By refining the seller clustering methodology, Olist aims to maintain and optimize the sellers retention rate.
+The primary objective of this project is to explore how sellers can be **clustered using RFM analysis** to determine which clusters they belong to in terms of their activity and total transaction value, which can act as a base for us to analyze ways to minimize **churn rates**. This involves **evaluating the effectiveness of machine learning (ML)-based clustering** compared to the existing rule-based approach, profiling them, identifying meaningful patterns in seller behavior, and leveraging these insights to develop strategies that improve retention and engagement. By refining the seller clustering methodology, Olist aims to maintain and optimize the sellers retention rate.
 
-Action: Sellers Clustering
+**Stakeholders**: Olist VCs, Olist C-level and Management Team
 
-Goal: Improve the clustering of these sellers using ML techniques to improve our ability to analyze these sellers based on their behavior.
+**Action**: Sellers Clustering
 
-Problem Statement for Analytics:
+**Goal**: Improve the clustering of these sellers using ML techniques to improve our ability to analyze these sellers based on their behavior.
+
+- **Problem Statement for Analytics:**
+
 After the seller clusters have been determined, we will then analyze each of these clusters to profile the sellers and see their differences in behavior based on RFM, particularly those that directly affect Olist's bottom line.
 
-To optimize seller retention, it is essential to gain a comprehensive understanding of seller behavior and performance. This begins with building a cohort analysis to track and analyze seller activity over time, helping to identify trends in retention and churn rates. Additionally, understanding the geographical distribution of the most active sellers will provide insights into regional variations in seller performance and help prioritize areas for targeted intervention. Investigating the types of products sold by these active sellers can shed light on which categories drive engagement and revenue, enabling tailored strategies to boost sales in those segments.
+To optimize seller retention, it is essential to gain a comprehensive understanding of seller behavior and performance. This begins with building a **cohort analysis** to track and analyze seller activity over time, helping to identify trends in retention and churn rates. Additionally, understanding the geographical distribution of the most active sellers will provide insights into regional variations in seller performance and help prioritize areas for targeted intervention. Investigating the types of products sold by these active sellers can shed light on which categories drive engagement and revenue, enabling tailored strategies to boost sales in those segments.
 
 Furthermore, determining which seller segments should be prioritized for retention efforts—based on their RFM scores and contribution to overall platform performance—will ensure that resources are allocated effectively. By combining these insights, Olist can develop targeted strategies to minimize the decline in seller retention, fostering a sustainable and thriving marketplace.
 
-Action: Profiling clusters by location, seller count and value contribution and analyzing seller behavior by products sold, RFM values and freight costs.
+**Stakeholders**: Olist VCs, Olist C-level and Management Team
 
-Goal: Optimizing sellers retention by decreasing the freight cost-to-price ratio by 25% for the lowest-performing sellers, increasing the minimum sellers' transaction frequency to 15 per month (for those that still have potential to become loyal sellers), and restore the transaction frequency and monetary value of the best-performing sellers back to their peaks by the end of the year.
+**Action**: Profiling clusters by location, seller count and value contribution and analyzing seller behavior by products sold, RFM values and freight costs.
+
+**Goal**: Optimizing sellers retention by decreasing the freight cost-to-price ratio for the lowest-performing sellers down to the level of those of the higher value sellers, getting half of the minimum sellers' transaction frequency to 15 per month (for those that still have potential to become loyal sellers), and restore the transaction frequency and monetary value of the best-performing sellers back to their peaks by the end of the year.
 
 # Analytical Flow of the .ipynb Notebook
 
@@ -134,7 +151,7 @@ The main products are sports_leisure, health_beauty, housewares, auto, furniture
   - Olist can try using a 'cargo-sharing' system, where goods from multiple sellers going to customers within close proximity go into a single cargo vehicle.
   - Given that this is a major shift in shipping strategy, a pilot plan should be performed by the second month after the publishing of this notebook. At least 33% of cargo transports should use this system within one year of this notebook's publishing.
   - Offer "freight-free" promotions for bundles to further incentivize purchases.
-  - The goal is to cut the median freight cost-to-price ratio for the 'Potential' and 'Lost' clusters down by 25% by next year.
+  - The goal is to cut the median freight cost-to-price ratio for the 'Potential' and 'Lost' clusters down to the level of those in at least the 'Loyal Sellers' cluster by next year.
 
 ## Loyal Sellers & Champions:
 
