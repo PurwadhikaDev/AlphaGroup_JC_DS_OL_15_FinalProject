@@ -18,6 +18,7 @@ The fully-processed dataframe available after the running of the .ipynb is too b
   - !pip install nbformat
 - Version 2.2 also:
   - Removes the code used for redundant checking of outliers one-by-one in the Data Understanding phase (that is done in more detail in the Data Cleaning phase). The text previously immediately above this code also clarifies this change.
+  - Added an analysis of the Cleaning of the Outliers (using code) that better visualizes our reason for retaining the outliers.
   - Clarifies the stakeholders that can gain from the findings of this notebook.
   - Corrects values for the target freight value-to-price ratios (there were previously conflicting values due to slight miscommunication among team members)
   - Clarifies why the IQR Outlier detection method was not selected, in favor of the Boxplot outlier detection method.
