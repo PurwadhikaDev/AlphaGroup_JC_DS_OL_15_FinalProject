@@ -14,6 +14,7 @@ The fully-processed dataframe available after the running of the .ipynb is too b
   - Updated the line graphs in the 'Characteristics of Each Segment' section showing the transaction frequency, total order value per month and seller count per month. Corrected their titles and y-axes and made the line color consistent across them all.
   - Added explanations at the end of the 'At which RFM points do the sellers appear?' section that explain why we are performing this analysis.
   - Added another recommendation, applicable to all clusters, at the end of the notebook: UI/UX improvement.
+  - Modified retention rate target at the end of the notebook, to be a little more ambitious.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -185,4 +186,12 @@ Higher-end products are watches_gift, bed_bath_table, and furniture_decor
 Given the minimal contribution of Lost sellers to Olist’s total order value and their inactivity for over a year, focus on active and potential sellers. The resources may be better allocated elsewhere to boost retention and engagement with more promising segments.
 Sending low-cost re-engagement emails or small incentives to revive interest, such as offering discounted listing fees, just to keep the door open for possible returns.
 
-Overall, we hope that these recommendations will help increase the retention rate of Olist's sellers. We believe that achieving a stable sellers' retention rate at above 35% for at least 12 months since their first order through Olist should be possible by the end of 2019.
+Overall, we hope that these recommendations will help increase the retention rate of Olist's sellers. We believe that achieving a stable sellers' retention rate at above 40% for at least 12 months since their first order through Olist should be possible by the end of 2019.
+
+## Applicable for All Clusters
+1. Improving the UX of the software:
+- The education rate in Brazil is still quite low. And so it is reasonable to believe that they are also not tech-savvy, especially in the suburban and rural states.
+  - Strategy: Consult with several of the sellers in the 'Potential' cluster on their challenges relevant to the software's design and implement them as new or improved features in the software. Prioritize those in the urban and suburban sectors and those in the sellers' modal age group (this info is not available in this dataframe), overall targeting an easier and more seamless experience in using their software specific to this and usrrounding age groups.
+  - Output: The new UI and features should launch within three months of the publishing of this notebook.
+
+Overall, we hope that these recommendations will help increase the retention rate of Olist's sellers. We believe that achieving a stable sellers' retention rate at above 40% for at least 12 months since their first order through Olist should be possible by the end of 2019. While this is far from what the best SaaS companies can achieve, considering Olist's current situation, this level of retention rate should be achievable considering that SaaS services aren't new and Olist is not operating in a very major startup ecosystem.
