@@ -8,6 +8,15 @@ This repository is reserved for the final project results made by Group Alpha of
 
 The fully-processed dataframe available after the running of the .ipynb is too big to be put in Github. It is hence deposited in Google Drive via this link: https://drive.google.com/drive/folders/1iuGwJI5c9hYH0dBaCrJAi6nJRqUefACW?usp=sharing
 
+## Update 29/11/2024:
+
+- Added Version 2.3:
+  - Updated the line graphs in the 'Characteristics of Each Segment' section showing the transaction frequency, total order value per month and seller count per month. Corrected their titles and y-axes and made the line color consistent across them all.
+  - Added explanations at the end of the 'At which RFM points do the sellers appear?' section that explain why we are performing this analysis.
+  - Added another recommendation, applicable to all clusters, at the end of the notebook: UI/UX improvement.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## Update 27/11/2024:
 
 - Uploaded the final file needed to make the .ipynb notebook run: the brazil-states.geojson.
