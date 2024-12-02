@@ -8,6 +8,18 @@ This repository is reserved for the final project results made by Group Alpha of
 
 The fully-processed dataframe available after the running of the .ipynb is too big to be put in Github. It is hence deposited in Google Drive via this link: https://drive.google.com/drive/folders/1iuGwJI5c9hYH0dBaCrJAi6nJRqUefACW?usp=sharing
 
+## Update 2/12/2024:
+
+- Added Version 2.4:
+  - Corrected the table showing untranslated product category names in the Data Cleaning phase.
+  - Corrected the observation of the RFM Histogram in the RFM Analysis section.
+  - Removed some redundant code.
+  - Fixed the y-axis label of the 'Seasonality graphs' to show 'Number of Products Sold', given the nature of the code.
+  - Added an explanation at the end of the 'Seasonality and Order Trends' section about the graph above it, and then an observation of the whole section which explains the purpose and result of this section.
+  - Modified the timeframe of the bundling recommendation to the 'Potential' seller cluster. It no longer pins the strategy on quarters, rather adding flexibility by saying to focus on peak selling times, which could come at irregular intervals (Recommendations in this README have been edited to match this).
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## Update 29/11/2024:
 
 - Added Version 2.3:
@@ -151,7 +163,7 @@ Furthermore, determining which seller segments should be prioritized for retenti
 - Coordination with partner ecommerce platforms to use bundling and flash sales to increase AOV, especially on products with declining AOV:
   - Find ways to convince the sellers in Olist to focus on top-selling products with declining AOV. These efforts can encourage higher-order values, especially during seasonal times, while ensuring the promotions align with profitability margins.
 
-  - Strategy: Coordinate with multiple major Brazilian marketplaces from 'Olist store' a flash sale event during the second quarter of the year, as this period has the highest frequency of transactions. Leveraging this peak activity can drive even higher sales, attract more buyers, and encourage customer engagement. The event can be tailored to include discounts, bundling offers, and exclusive deals to maximize participation and revenue.
+  - Strategy: Strategy: Coordinate with multiple major Brazilian marketplaces from 'Olist store' a flash sale event during peak selling times. Leveraging this peak activity can drive even higher sales, attract more buyers, and encourage customer engagement. The event can be tailored to include discounts, bundling offers, and exclusive deals to maximize participation and revenue.
 
   - Output: Decrease Recency value to less than 50 days without an order passed through Olist and increase Frequency (to 15 orders/month), and Monetary values (to at least 20k Brazilian Reals total) of 558 of the 1,116 'Potential' sellers aforementioned deemed as 'declining'. These goals are to be achieved by the end of 2019.
 
