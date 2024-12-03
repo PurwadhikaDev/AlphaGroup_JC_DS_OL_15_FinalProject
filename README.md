@@ -8,6 +8,13 @@ This repository is reserved for the final project results made by Group Alpha of
 
 The fully-processed dataframe available after the running of the .ipynb is too big to be put in Github. It is hence deposited in Google Drive via this link: https://drive.google.com/drive/folders/1iuGwJI5c9hYH0dBaCrJAi6nJRqUefACW?usp=sharing
 
+## Update 3/12/2024:
+
+- Added Version 2.5:
+  - Modified the parameters (with evidence of iterations being performed) for the DBSCAN slightly to increase silhouette score. Cluster count doesn't change, and decision to drop this method in favor of K-Means clustering also does not change.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## Update 2/12/2024:
 
 - Added Version 2.4:
