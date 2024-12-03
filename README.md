@@ -12,6 +12,7 @@ The fully-processed dataframe available after the running of the .ipynb is too b
 
 - Added Version 2.5:
   - Modified the parameters (with evidence of iterations being performed) for the DBSCAN slightly to increase silhouette score. Cluster count doesn't change, and decision to drop this method in favor of K-Means clustering also does not change.
+  - Corrected the labels of each seller cluster on the table in the Recommendations section containing the Average Price, % Freight to Price, Recommendations, Real Price, Target Price and the Price Difference.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
