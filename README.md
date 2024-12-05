@@ -8,6 +8,18 @@ This repository is reserved for the final project results made by Group Alpha of
 
 The fully-processed dataframe available after the running of the .ipynb is too big to be put in Github. It is hence deposited in Google Drive via this link: https://drive.google.com/drive/folders/1iuGwJI5c9hYH0dBaCrJAi6nJRqUefACW?usp=sharing
 
+## Update 5/12/2024:
+
+We would like to explain why we have used the 'StandardScaler' for the clustering:
+
+We have tried the RobustScaler and it came with two complications:
+- The elbow method and the silhouette score disagree on the optimum number of clusters to use.
+- The silhouette score suggests two clusters only. We believe that these are too few clusters to make an in-depth analysis, as it only leaves the best-performing sellers vs all the rest in which there is an extreme difference.
+
+Using StandardScaler not only ensure that the elbow method and silhouette score agree, they also suggest more clusters, and so that scaler is used.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 ## Update 3/12/2024:
 
 - Added Version 2.5:
