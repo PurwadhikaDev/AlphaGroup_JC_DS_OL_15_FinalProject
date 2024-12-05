@@ -14,7 +14,7 @@ We would like to explain why we have used the 'StandardScaler' for the clusterin
 
 We have tried the RobustScaler and it came with two complications:
 - The elbow method and the silhouette score disagree on the optimum number of clusters to use.
-- The silhouette score suggests two clusters only. We believe that these are too few clusters to make an in-depth analysis, as it only leaves the best-performing sellers vs all the rest in which there is an extreme difference.
+- The silhouette score suggests two clusters only. We believe that these are too few clusters to make an in-depth analysis, as it only leaves the best-performing sellers vs all the rest in which there is an extreme difference in terms of performance, which leaves us concerned that it will put the goal for our recommendations to be too high sellers that are not among the best.
 
 Using StandardScaler not only ensure that the elbow method and silhouette score agree, they also suggest more clusters, and so that scaler is used.
 
